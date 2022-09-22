@@ -1,0 +1,25 @@
+.timeForm .input {
+    /* border: 1px solid grey; */
+    width: max-content;
+    padding: 8px 16px;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+.form-group label {
+    font-size: 28px;
+}
+
+.timeForm .input input {
+    display: inline-block;
+    margin: 0 8px;
+    padding-left: 8px;
+    font-size: 18px;
+    width: 50px;
+    line-height: 28px;
+    border-radius: 7px;
+}
+
+.timeForm .input input strong {
+    display: inline-block;
+}
