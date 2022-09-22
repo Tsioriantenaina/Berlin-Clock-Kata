@@ -119,8 +119,6 @@ const entireBerlinClock = (time) => {
 }
 
 
-
-
 module.exports = {
     secondLightRow,
     fiveHoursRow,
