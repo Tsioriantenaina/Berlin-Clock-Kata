@@ -5,9 +5,13 @@ const {
     singleMinutesRow,
     fiveMinutesRow,
     entireBerlinClock
-} = require('../services/Calcul');
+} = require('../services/ChangeToBerlinService');
 
 describe('Berlin Clock', () => {
+
+    /**
+     * Second Row Test
+     */
     describe('Second Row', () => {
 
         it('Should "Y" for "00" ', () => {
@@ -28,6 +32,9 @@ describe('Berlin Clock', () => {
 
     });
 
+    /**
+     * Five Hours Row Test
+     */
     describe('Five Hours Row', () => {
 
         it('Should "OOOO" for "00"', () => {
@@ -56,6 +63,9 @@ describe('Berlin Clock', () => {
 
     });
 
+    /**
+     * Single Hours Row Test
+     */
     describe('Single Hours Row', () => {
 
         it('Should "OOOO" for "00"', () => {
@@ -80,6 +90,9 @@ describe('Berlin Clock', () => {
 
     });
 
+    /**
+     * Single Minutes Row test
+     */
     describe('Single Minutes Row', () => {
         
         it('Should "OOOO" for "00"', () => {
@@ -103,7 +116,10 @@ describe('Berlin Clock', () => {
         });
         
     });
-
+    
+    /**
+     * Five Minutes Row Test
+     */
     describe('Five Minutes Row', () => {
 
         it('Should "OOOOOOOOOOO" for "00"', () => {
@@ -128,6 +144,9 @@ describe('Berlin Clock', () => {
 
     });
 
+    /**
+     * Entire Berlin Clock Test
+     */
     describe('Entire Berlin Clock', () => {
 
         it('Should "YOOOOOOOOOOOOOOOOOOOOOOO" for "00:00:00"', () => {
