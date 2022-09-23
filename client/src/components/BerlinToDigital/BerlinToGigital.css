@@ -1,0 +1,23 @@
+.toDigital span, .toDigital .second {
+    cursor: pointer;
+}
+
+.toDigital span.yellow.active {
+    background-color: yellow;
+}
+
+.toDigital span.red.active {
+    background-color: red;
+}
+
+.toDigital .fourLight span:hover {
+    background-color: yellow;
+}
+
+.toDigital span.yellow:hover, .toDigital .second:hover {
+    background-color: yellow !important;
+}
+
+.toDigital span.red:hover {
+    background-color: red;
+}

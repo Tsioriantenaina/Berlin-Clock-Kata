@@ -1,8 +1,32 @@
-.second {
+.second.digitalToBerlin, .second.berlinToDigital {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     background-color: yellow;
     border: 6px solid grey;
+    position: relative;
+}
+
+.second.berlinToDigital {
+    background-color: #837479;
+}
+
+.second.berlinToDigital:hover::after {
+    content: attr(name);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  }
+
+.second.berlinToDigital.active {
+    background-color: yellow !important;
 }
 

@@ -24,3 +24,13 @@
     margin-right: 4px;
     border-radius:  0 16px 16px 0;
 }
+
+.fourLight.fiveHours span.active, 
+.fourLight.fiveHours span:hover,
+.fourLight.singleHours span.active,
+.fourLight.singleHours span:hover ,
+.fourLight.singleMinutes span.active,
+.fourLight.singleMinutes span:hover 
+{
+    background-color: #ff8245 !important;
+}
