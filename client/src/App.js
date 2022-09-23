@@ -28,7 +28,7 @@ function App() {
    * @function getInput Get value in input by key (name) and value. Set this key: value in state
    * @param {string} value the data value in input
    * @param {string} name data attribute name in input
-   * 
+   * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmail.com>
    */
   const getInput = (value, name) =>  {
     const data = {[name]: value}
@@ -39,6 +39,7 @@ function App() {
    * @function handleSubmit Handle converted submit, Fetch an API and set the response in the state
    * @param {Event} e 
    * @return void
+   * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmail.com>
    */
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -62,6 +63,7 @@ function App() {
    * @param {boolean} isDtoB 
    * @param {string} row
    * @return void
+   * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmail.com>
    */
   const handleClockClick = (e, index, isDtoB, row) => {
     if(row === 'second'){

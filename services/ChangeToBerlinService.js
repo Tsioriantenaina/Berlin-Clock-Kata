@@ -46,7 +46,7 @@ const changeTimeToElevenString = (time) => {
  * Change Second row
  * @param {string} second second to convert
  * @returns {string} Berlin clock second row
- * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmain.com>
+ * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmail.com>
  */
 const secondLightRow =  (second) => {
     let result = "";
@@ -64,7 +64,7 @@ const secondLightRow =  (second) => {
  * Change the five hours row
  * @param {string} hours hours to convert
  * @returns {string} Berlin clock five hours row
- * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmain.com>
+ * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmail.com>
  */
 const fiveHoursRow = (hours) => {
     let result = "";
@@ -76,7 +76,7 @@ const fiveHoursRow = (hours) => {
  * Change the Hours for second row
  * @param {string} hours hours to convert
  * @returns {string} Berlin clock single hour row
- * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmain.com>
+ * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmail.com>
  */
 const singleHoursRow = (hours) => {
     let intHours = Number(hours);
@@ -87,7 +87,7 @@ const singleHoursRow = (hours) => {
  * Change Single minutes row
  * @param {string} minutes minute to convert
  * @returns {string} berlin clock single minutes Row value
- * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmain.com>
+ * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmail.com>
  */
 const singleMinutesRow = (minutes) => {
     let intMinute = Number(minutes);
@@ -98,7 +98,7 @@ const singleMinutesRow = (minutes) => {
  * Change Five minutes row 
  * @param {string} minutes minutes to convert
  * @returns {string} Berlin clock five minutes row value
- * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmain.com>
+ * @author Solo Tsioriantenaina RAZAFY <misangy.dev@gmail.com>
  */
 const fiveMinutesRow = (minutes) => {
     let intMinute = Number(minutes);
