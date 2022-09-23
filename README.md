@@ -20,4 +20,10 @@ npm install
 ```sh
 npm run dev
 ```
+or you can run separatly the server by run:
+```sh
+npm start
+npm test
+npm run client
+```
 #### The client, back server and the test should run now.
