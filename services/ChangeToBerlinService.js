@@ -1,4 +1,3 @@
-
 /**
  * 
  * @param {Number} time time to convert
@@ -117,7 +116,6 @@ const entireBerlinClock = (time) => {
     return secondLightRow(timeTable[2]) + fiveHoursRow(timeTable[0]) + singleHoursRow(timeTable[0]) + 
         fiveMinutesRow(timeTable[1]) + singleMinutesRow(timeTable[1]);
 }
-
 
 module.exports = {
     secondLightRow,

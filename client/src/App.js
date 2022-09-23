@@ -18,10 +18,10 @@ function App() {
   const [singleMinutesRow, setSingleMinutesRow] = useState("OOOO");
   const [time, setTime] = useState({hour: "00", minute: "00", second: "00"});
   const [secondActivate , setSecondActivate] = useState("0");
-  const [fiveHoursActivate , setFiveHoursActivate] = useState("");
-  const [singleHoursActivate , setSingleHoursActivate] = useState("");
-  const [fiveMinuteActivate , setFiveMinuteActivate] = useState("");
-  const [singleMinuteActivate , setSingleMinuteActivate] = useState("");
+  const [fiveHoursActivate , setFiveHoursActivate] = useState("-1");
+  const [singleHoursActivate , setSingleHoursActivate] = useState("-1");
+  const [fiveMinuteActivate , setFiveMinuteActivate] = useState("-1");
+  const [singleMinuteActivate , setSingleMinuteActivate] = useState("-1");
 
 
   /**
@@ -55,9 +55,20 @@ function App() {
     }
   }
 
+  /**
+   * @function handleClockClick Handle click and update state for each hours minutes and second row
+   * @param {Event} e 
+   * @param {string} index 
+   * @param {boolean} isDtoB 
+   * @param {string} row
+   * @return void
+   */
   const handleClockClick = (e, index, isDtoB, row) => {
     if(row === 'second'){
       index++;
+      if(index > 59) {
+        index = 0;
+      }
       setSecondActivate(index);
     }
 
@@ -65,12 +76,35 @@ function App() {
     if(row === 'singleHours'){setSingleHoursActivate(index)}
     if(row === 'fiveMinute') {setFiveMinuteActivate(index)}
     if(row === 'singleMinutes'){setSingleMinuteActivate(index)}
-    
-    console.log('index =>', index)
   }
 
+  const handleResetClick = () => {
+    setSecondActivate("");
+    setFiveHoursActivate("-1");
+    setSingleHoursActivate("-1");
+    setFiveMinuteActivate("-1");
+    setSingleMinuteActivate("-1");
+  }
+
+  const contexts = {  second, 
+                      fiveHoursRow, 
+                      singleHoursRow, 
+                      fiveMinuteRow, 
+                      singleMinutesRow, 
+                      time, 
+                      getInput, 
+                      handleSubmit, 
+                      handleClockClick, 
+                      fiveMinuteActivate, 
+                      secondActivate, 
+                      fiveHoursActivate, 
+                      singleHoursActivate, 
+                      singleMinuteActivate,
+                      handleResetClick
+                    };
+
   return (
-    <ClockContext.Provider value={{second, fiveHoursRow, singleHoursRow, fiveMinuteRow, singleMinutesRow, time, getInput, handleSubmit, handleClockClick, fiveMinuteActivate, secondActivate, fiveHoursActivate, singleHoursActivate, singleMinuteActivate}}>
+    <ClockContext.Provider value={contexts}>
       <div className='main'>
         <DigitalToBerlin isDigitalToBerlin/>
         <BerlinToDigital isBerlinToDigital/>

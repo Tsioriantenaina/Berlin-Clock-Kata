@@ -8,7 +8,7 @@ const DigitalToBerlin = ({isBerlinToDigital, isDigitalToBerlin}) => {
   return (
     <div className="App">
         <div className='container'>
-            <h1>Converting Digital Time to Berlin Time</h1>
+            <h1>Converting Digital Time<br/> to Berlin Time</h1>
             <TimeInput isBerlinToDigital={isBerlinToDigital} isDigitalToBerlin={isDigitalToBerlin}/>
             <div className='berlinClock'>
                 <Second isBerlinToDigital={isBerlinToDigital} isDigitalToBerlin={isDigitalToBerlin}/>

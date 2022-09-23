@@ -13,9 +13,10 @@ code {
 }
 
 h1 {
-  color: #00c700;
-  font-size: 40px;
+  color: #837479;
+  font-size: 28px;
   text-transform: uppercase;
+  font-family: source-code-pro;
 }
 
 .btn-primary {

@@ -23,6 +23,7 @@
 .main {
   height: calc(100vh - 70px);
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   /* margin: 16px; */
 }

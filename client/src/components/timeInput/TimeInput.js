@@ -3,10 +3,14 @@ import { ClockContext } from '../../ClockContext';
 import './TimeInput.css';
 
 const TimeInput = ({isDigitalToBerlin}) => {
-    const { getInput, handleSubmit} = useContext(ClockContext);
+    const { getInput, handleSubmit, secondActivate, fiveHoursActivate, singleHoursActivate, fiveMinuteActivate, singleMinuteActivate} = useContext(ClockContext);
 
     const button = isDigitalToBerlin ? <input className='btn-primary' type="submit" name="" value="CONVERT" /> : null;
-    const label = isDigitalToBerlin ? <label>Enter your time:</label> : <label>The result is:</label> ;
+    const label = isDigitalToBerlin ? <label>Enter your time:</label> : <label>The result is:</label>;
+
+    const hoursValue = ((Number(fiveHoursActivate) + 1) * 5) + ((Number(singleHoursActivate) + 1));
+    const minutesValue = ((Number(fiveMinuteActivate) + 1) * 5) + (Number(singleMinuteActivate) + 1);
+
     const digitalTime = isDigitalToBerlin ?
                             <div className='input'>
                                 <input type="number" 
@@ -35,21 +39,21 @@ const TimeInput = ({isDigitalToBerlin}) => {
                                 name="hour" 
                                 placeholder='00' 
                                 disabled
-                                value="{00}"
+                                value={hoursValue < 10 ? "0"+hoursValue : hoursValue}
                             />
                             <strong>:</strong>
                             <input type="number" 
                                 name="minute" 
                                 placeholder='00'
                                 disabled
-                                value="00"
+                                value={minutesValue < 10 ? "0"+minutesValue : minutesValue}
                             />
                             <strong>:</strong>
                             <input type="number" 
                                 name="second"  
                                 placeholder='00'
                                 disabled
-                                value="00"
+                                value={secondActivate < 10 ? "0"+secondActivate : secondActivate}
                              />
                         </div>
   return (

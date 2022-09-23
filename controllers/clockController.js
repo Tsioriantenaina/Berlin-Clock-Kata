@@ -26,6 +26,9 @@ clockController = {
         }
 
         res.status(200).json(brelinClock);
+    },
+    postBerlinTime: (req, res) => {
+        res.status(200).json({message: 'COOL COOL'});
     }
 }
 

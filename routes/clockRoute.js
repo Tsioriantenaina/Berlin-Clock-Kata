@@ -1,5 +1,5 @@
 const express = require('express');
-const { getClock, postTime } = require('../controllers/clockController');
+const { postBerlinTime, postTime } = require('../controllers/clockController');
 
 const route = express.Router();
 
