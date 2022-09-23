@@ -7,4 +7,4 @@ I realy apreciate If you put a comment to improve my code. So feel free to put a
 #### You can pull the project with git:
 ```sh
 git clone https://github.com/Tsioriantenaina/Berlin-Clock-Kata.git
-```sh
+```
