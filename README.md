@@ -20,7 +20,7 @@ npm install
 ```sh
 npm run dev
 ```
-or you can run separatly the server by run:
+or you can run separatly the server by runing:
 ```sh
 npm start
 npm test
